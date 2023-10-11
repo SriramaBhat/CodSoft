@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(rgb(55, 181, 231), rgb(45, 214, 99));
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.75rem 1.2rem;
+  width: 100%;
+  background-color: rgb(66, 109, 207);
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+header a {
+  color: black;
+}
+
+.nav-links {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 0 15px;
+  padding: 4px;
+}
+
+.nav-links:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+.nav-links:hover:after {
+  width: 100%;
+  background: aliceblue;
+}
+
+section {
+  padding: 20px;
+  min-height: 100vh;
+}
+
+#my_image {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#welcome {
+  display: flex;
+  min-height: 75vh;
+  justify-content: space-around;
+}
+
+.welcome-div {
+  margin-top: 9rem;
+}
+
+#intro_div {
+  margin-left: 5rem;
+}
+
+.img_div {
+  width: 50%;
+  text-align: center;
+}
+
+.img_div img {
+  width: 50%;
+} 
+
+.wrapper {
+  display: inline-flex;
+  margin-left: 1.5rem;
+}
+
+.wrapper .static-txt {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.wrapper .dynamic-txt {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-left: 15px;
+  line-height: 35px;
+  height: 35px;
+  overflow: hidden;
+}
+
+.dynamic-txt li {
+  list-style: none;
+  position: relative;
+  animation: slide 12s steps(4) infinite;
+  border-bottom: 30px;
+  top: 0;
+}
+
+@keyframes slide {
+  100% {
+    top: -140px;
+  }
+}
+
+.dynamic-txt li span {
+  position: relative;
+}
+
+.dynamic-txt li span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background: rgb(54, 185, 215);
+  border-left: 10px solid black;
+  animation: typing 3s steps(21) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#about {
+  padding: 20px;
+  text-align: center;
+  min-height: 93vh;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 2.5rem;
+}
+
+.about-box {
+  border: 2px solid black;
+  margin: 2.5rem 10rem;
+  padding: 3rem;
+  font-size: 1.5rem;
+}
+
+.skill-div, .project-div{
+  display: grid;
+  gap: 50px 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 15px;
+}
+
+.skill-div article {
+  padding: 40px;
+}
+
+.skill-div article, .project-div article {
+  background: rgb(37, 125, 129);  
+  color: aliceblue;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+.skill-div article img{
+  height: 85%;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.project-div {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-div article {
+  height: 525px;
+}
+
+.project-div article p {
+  font-weight: normal;
+}
+
+.project-div article a {
+  font-weight: bold;
+  color: rgb(230, 166, 17);
+  display: block;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-div article img {
+  object-fit: cover;
+  height: 30%;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.project-div h4, .project-div p {
+  margin-bottom: 20px;
+}
+
+.project-div .description {
+  padding: 0 40px;
+}
+
+.project-div .proj-1 {
+  height: 400px;
+}
+
+#contact {
+  text-align: center;
+  min-height: 40vh;
+}
+
+footer {
+  text-align: center;
+}

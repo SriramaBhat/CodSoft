@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="index.html" class="logo">Srirama Bhat</a>
+      </div>
+      <nav>
+        <ul>
+          <li class="nav-links"><a href="#about">About</a></li>
+          <li class="nav-links"><a href="#skills">Skills</a></li>
+          <li class="nav-links"><a href="#projects">Projects</a></li>
+          <li class="nav-links"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="welcome">
+        <div class="welcome-div" id="intro_div">
+          <h1>Hello! I am Srirama Bhat</h1>
+          <div class="wrapper">
+            <div class="static-txt">I am a</div>
+            <ul class="dynamic-txt">
+              <li><span>Web Developer</span></li>
+              <li><span>Python Developer</span></li>
+              <li><span>Software Engineer</span></li>
+              <li><span>Literature Enthusiast</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="welcome-div img_div">
+          <img src="assets/Srirama_Bhat.jpg" alt="My Image" id="my_image" />
+        </div>
+      </section>
+      <section id="about">
+        <h2>About Myself</h2>
+        <div class="about-box">
+          I am an final year undergraduate student, currenty pursuing B.E. in
+          Computer Science and Engineering in JSS Science and Technology
+          University, Mysuru. I am passionate about computer science,
+          programming, science, and literature. I also practice metrical form of
+          writing poetry in Kannada.
+        </div>
+      </section>
+      <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skill-div">
+          <article>
+            <img src="assets/html_logo.png" alt="HTML Logo" />
+            <p>HTML</p>
+          </article>
+          <article>
+            <img src="assets/css_logo.png" alt="CSS Logo" />
+            <p>CSS</p>
+          </article>
+          <article>
+            <img src="assets/js_logo.png" alt="JavaScript Logo" />
+            <p>JavaScript</p>
+          </article>
+          <article>
+            <img src="assets/react_logo.png" alt="ReactJS Logo" />
+            <p>ReactJS</p>
+          </article>
+          <article>
+            <img src="assets/node_logo.png" alt="NodeJS Logo" />
+            <p>NodeJS and ExpressJS</p>
+          </article>
+          <article>
+            <img src="assets/python_logo.png" alt="Python Logo" />
+            <p>Python</p>
+          </article>
+          <article>
+            <img src="assets/mysql_logo.png" alt="MySQL Logo" />
+            <p>MySQL</p>
+          </article>
+          <article>
+            <img src="assets/sqlite_logo.png" alt="SQLite Logo" />
+            <p>SQLite</p>
+          </article>
+          <article>
+            <img src="assets/mongo_logo.png" alt="MongoDB Logo" />
+            <p>MongoDB</p>
+          </article>
+          <article>
+            <img src="assets/cpp_logo.png" alt="C++ Logo" />
+            <p>C++</p>
+          </article>
+          <article>
+            <img src="assets/c_logo.png" alt="C Logo" />
+            <p>C</p>
+          </article>
+          <article>
+            <img src="assets/java_logo.png" alt="Java Logo" />
+            <p>Java</p>
+          </article>
+        </div>
+      </section>
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-div">
+          <article>
+            <img
+              src="assets/protein_structure.jpeg"
+              id="protein"
+              alt="Protein Structure Representation"
+            />
+            <div class="description">
+              <h4>Protein Structure Prediction (Frontend and Routing)</h4>
+              <p>
+                A web application with interactive protein structure display
+                built using ReactJS and NodeJS, integrated with an ML Model that
+                predicts the tertiary protein structure based on amino acid
+                sequence or the DNA sequence.
+              </p>
+              <hr />
+              <a
+                href="https://github.com/SriramaBhat/Protein-Structure-Prediction-System"
+                >View Project</a
+              >
+            </div>
+          </article>
+          <article>
+            <img src="assets/dog.jpeg" alt="Dog image input example" />
+            <div class="description">
+              <h4>Dog Breed Identification</h4>
+              <p>
+                A Transfer Learning model, trained to detect a dog's breed from
+                using the image of the dog. This model is trained using the
+                dataset from Kaggle's Dog breed identification competition. The
+                base model is imagenet-v2 which is taken from TensorFlow Hub.
+              </p>
+              <hr />
+              <a href="https://github.com/SriramaBhat/Dog_Breed_Identification"
+                >View Project</a
+              >
+            </div>
+          </article>
+          <article>
+            <img src="assets/pharmacy.jpeg" alt="Pharmacy" />
+            <div class="description">
+              <h4>Pharmacy Management System</h4>
+              <p>
+                A Simple Pharmacy Management system, built using Python and the
+                Tkinter module, which has a normal employee and admin sides,
+                which provide an easy way of management of medicine stocks,
+                transactions and bill generation.
+              </p>
+              <hr />
+              <a href="https://github.com/SriramaBhat/Pharmacy_Management"
+                >View Project</a
+              >
+            </div>
+          </article>
+          <article class="proj-1">
+            <img src="assets/online_shop.jpeg" alt="Online Shop" />
+            <div class="description">
+              <h4>Simple Online Shop</h4>
+              <p>
+                Simple Online Shop Built using EJS, CSS and JavaScript, with all
+                the basic functionalities and Stripe API Integration.
+              </p>
+              <hr />
+              <a href="https://github.com/SriramaBhat/Online_Shop"
+                >View Project</a
+              >
+            </div>
+          </article>
+          <article class="proj-1">
+            <img src="assets/cgpa_calc.jpg" alt="CGPA Calculator" />
+            <div class="description">
+              <h4>CGPA Calculator</h4>
+              <p>
+                A CGPA Calculator built using HTML, CSS and JavaScript that
+                calculates the CGPA based on grades earned and Credits of a
+                subject.
+              </p>
+              <hr />
+              <a
+                href="https://github.com/SriramaBhat/Mini_Projects/tree/main/CGPA_Calculator"
+                >View Project</a
+              >
+            </div>
+          </article>
+          <article class="proj-1">
+            <img
+              src="assets/tic_tac_toe.jpeg"
+              id="tic-tac-toe"
+              alt="Tic-Tac-Toe Board"
+            />
+            <div class="description">
+              <h4>Tic-Tac-Toe</h4>
+              <p>
+                a tic-tac-toe game built using HTML CSS and JavaScript, that
+                allows two players to play tic-tac-toe.
+              </p>
+              <hr />
+              <a href="https://github.com/SriramaBhat/Tic-Tac-Toe"
+                >View Project</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Connect with me</h2>
+        <div
+          style="
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            margin: 20px auto;
+          "
+        >
+          <a href="https://github.com/SriramaBhat">
+            <i class="fa-brands fa-github fa-2xl" style="color: #000000"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/srirama-bhat-3ba68b252/" style="color: #000000">
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+          </a>
+          <a href="https://www.instagram.com/sriramarbhat/">
+            <i class="fa-brands fa-instagram fa-2xl" style="color: #000000"></i>
+          </a>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2em;
+            align-items: center;
+            justify-content: space-around;
+            height: 100px;
+          "
+        >
+          <p>Phone: <a href="tel:+919148466270">+91 9148 466 270</a></p>
+          <p>
+            Email:
+            <a href="mailto:sriramarbhat@gmail.com">sriramarbhat@gmail.com</a>
+          </p>
+        </div>
+        <footer>Copyright &copy; Srirama Bhat</footer>
+      </section>
+    </main>
+  </body>
+</html>
