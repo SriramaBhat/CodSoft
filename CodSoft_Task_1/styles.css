@@ -80,6 +80,7 @@ section {
 .img_div {
   width: 50%;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .img_div img {
