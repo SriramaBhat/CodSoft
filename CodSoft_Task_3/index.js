@@ -31,6 +31,7 @@ function del() {
 
 function calculate() {
   try {
+    console.log(outputvalueElement.value);
     let val = eval(outputvalueElement.value);
     if (val === "NaN" || val === "Infinity") {
       val = "Error";
